@@ -1,6 +1,6 @@
 # Open Operator
 
-Open Operator is an open source project inspired by OpenAI's Operator feature, bringing autonomous web browsing capabilities to everyone. Built with Next.js and powered by Browserbase's web automation technology, it enables AI agents to interact with web interfaces naturally and effectively.
+Open Operator is an open source project inspired by OpenAI's Operator feature, bringing autonomous web browsing capabilities to everyone. Built with Next.js and powered by Stagehand's web automation capabilities, it enables AI agents to interact with web interfaces naturally and effectively.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbrowserbase%2Fopen-operator&env=OPENAI_API_KEY,BROWSERBASE_API_KEY,BROWSERBASE_PROJECT_ID&envDescription=API%20keys%20needed%20to%20run%20Open%20Operator&envLink=https%3A%2F%2Fgithub.com%2Fbrowserbase%2Fopen-operator%23environment-variables)
 
@@ -70,8 +70,8 @@ The system combines these technologies to:
 
 ### Key Technologies
 
-- **Browserbase**: Powers the core browser automation and interaction capabilities
-- **Stagehand**: Handles precise DOM manipulation and state management
+- **[Browserbase](https://www.browserbase.com)**: Powers the core browser automation and interaction capabilities
+- **[Stagehand](https://github.com/browserbase/stagehand)**: Handles precise DOM manipulation and state management
 - **Next.js**: Provides the modern web framework foundation
 - **AI Models**: Enable natural language understanding and decision making
 
@@ -91,4 +91,4 @@ Open Operator is open source software licensed under the MIT license.
 
 ## Acknowledgments
 
-This project is inspired by OpenAI's Operator feature and builds upon various open source technologies including Next.js, React, Browserbase, and Stagehand.
+This project is inspired by OpenAI's [Operator](https://openai.com/blog/operator) feature and builds upon various open source technologies including [Next.js](https://nextjs.org), [React](https://react.dev), [Browserbase](https://browserbase.com), and [Stagehand](https://github.com/browserbase/stagehand).
