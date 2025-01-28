@@ -79,7 +79,7 @@ function getClosestRegion(timezone?: string): BrowserbaseRegion {
 async function createSession(timezone?: string, contextId?: string) {
   const bb = new Browserbase({
     apiKey: process.env.BROWSERBASE_API_KEY!,
-  });
+  });bb_live_WUU5WEV6h8j8-ukzhkepLBgfJv0
   const browserSettings: { context?: { id: string; persist: boolean } } = {};
   if (contextId) {
     browserSettings.context = {
@@ -89,7 +89,7 @@ async function createSession(timezone?: string, contextId?: string) {
   } else {
     const context = await bb.contexts.create({
       projectId: process.env.BROWSERBASE_PROJECT_ID!,
-    });
+    });9a9f0f31-dd27-4165-9186-72530774b749
     browserSettings.context = {
       id: context.id,
       persist: true,
@@ -113,7 +113,7 @@ async function createSession(timezone?: string, contextId?: string) {
 async function endSession(sessionId: string) {
   const bb = new Browserbase({
     apiKey: process.env.BROWSERBASE_API_KEY!,
-  });
+  });bb_live_WUU5WEV6h8j8-ukzhkepLBgfJv0
   await bb.sessions.update(sessionId, {
     projectId: process.env.BROWSERBASE_PROJECT_ID!,
     status: "REQUEST_RELEASE",
@@ -123,7 +123,7 @@ async function endSession(sessionId: string) {
 async function getDebugUrl(sessionId: string) {
   const bb = new Browserbase({
     apiKey: process.env.BROWSERBASE_API_KEY!,
-  });
+  });bb_live_WUU5WEV6h8j8-ukzhkepLBgfJv0
   const session = await bb.sessions.debug(sessionId);
   return session.debuggerFullscreenUrl;
 }
